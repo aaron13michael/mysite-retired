@@ -31,5 +31,9 @@
       "es2015",
       "react"
     ]
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-print": "^2.0.1"
   }
 }

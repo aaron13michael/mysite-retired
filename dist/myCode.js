@@ -56,30 +56,85 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var HelloWorld = _react2.default.createClass({
-	    displayName: "HelloWorld",
+	var NavBar = _react2.default.createClass({
+	    displayName: "NavBar",
 
 	    render: function render() {
 	        return _react2.default.createElement(
-	            "p",
-	            null,
-	            "Hello, ",
-	            this.props.greetTarget,
-	            "!"
+	            "div",
+	            { className: "ui stackable menu" },
+	            _react2.default.createElement(
+	                "div",
+	                { className: "header item" },
+	                "Aaron Stadler Software"
+	            ),
+	            _react2.default.createElement(
+	                "a",
+	                { className: "item" },
+	                "About Me"
+	            ),
+	            _react2.default.createElement(
+	                "a",
+	                { className: "item" },
+	                "Soundcloud"
+	            ),
+	            _react2.default.createElement(
+	                "a",
+	                { className: "item" },
+	                "Gallery"
+	            ),
+	            _react2.default.createElement(
+	                "a",
+	                { className: "item" },
+	                "Contact"
+	            )
 	        );
 	    }
 	});
 
-	_reactDom2.default.render(_react2.default.createElement(
-	    "div",
-	    null,
-	    _react2.default.createElement(HelloWorld, { greetTarget: "Lucas" }),
-	    _react2.default.createElement(HelloWorld, { greetTarget: "Kumatora" }),
-	    _react2.default.createElement(HelloWorld, { greetTarget: "Duster" }),
-	    _react2.default.createElement(HelloWorld, { greetTarget: "Boney" }),
-	    _react2.default.createElement(HelloWorld, { greetTarget: "Claus" }),
-	    _react2.default.createElement(HelloWorld, { greetTarget: "Salsa" })
-	), document.querySelector("#container"));
+	var Banner = _react2.default.createClass({
+	    displayName: "Banner",
+
+	    render: function render() {
+	        return _react2.default.createElement(
+	            "div",
+	            { className: "ui clearing segment" },
+	            _react2.default.createElement("img", { className: "ui medium circular image", src: "img/smiley.jpg", width: "500px", height: "auto" }),
+	            _react2.default.createElement(
+	                "h1",
+	                { className: "ui right floated header" },
+	                "WELCOME TO MY WORLD!"
+	            )
+	        );
+	    }
+	});
+
+	var Segments = _react2.default.createClass({
+	    displayName: "Segments",
+
+	    render: function render() {
+	        return _react2.default.createElement(
+	            "div",
+	            { className: "ui segments" },
+	            _react2.default.createElement(Banner, null)
+	        );
+	    }
+	});
+
+	var Main = _react2.default.createClass({
+	    displayName: "Main",
+
+	    render: function render() {
+	        return _react2.default.createElement(
+	            "div",
+	            null,
+	            _react2.default.createElement(NavBar, null),
+	            _react2.default.createElement(Segments, null)
+	        );
+	    }
+	});
+
+	_reactDom2.default.render(_react2.default.createElement(Main, null), document.querySelector("#container"));
 
 /***/ },
 /* 1 */
