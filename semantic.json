@@ -63,7 +63,11 @@
     "api",
     "form",
     "state",
-    "visibility"
+    "visibility",
+    "header",
+    "icon",
+    "image",
+    "reveal"
   ],
   "version": "2.2.7"
 }

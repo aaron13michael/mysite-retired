@@ -98,12 +98,51 @@
 	    render: function render() {
 	        return _react2.default.createElement(
 	            "div",
-	            { className: "ui clearing segment" },
-	            _react2.default.createElement("img", { className: "ui medium circular image", src: "img/smiley.jpg", width: "500px", height: "auto" }),
+	            { className: "ui segment" },
+	            _react2.default.createElement("img", { className: "ui centered aligned medium circular image", src: "img/smiley.jpg", width: "500px", height: "auto" }),
 	            _react2.default.createElement(
 	                "h1",
-	                { className: "ui right floated header" },
+	                { className: "ui center aligned header" },
 	                "WELCOME TO MY WORLD!"
+	            )
+	        );
+	    }
+	});
+
+	var NavCircle = _react2.default.createClass({
+	    displayName: "NavCircle",
+
+	    render: function render() {
+	        return _react2.default.createElement(
+	            "div",
+	            { className: "column" },
+	            _react2.default.createElement(
+	                "div",
+	                { className: "ui circular segment" },
+	                _react2.default.createElement(
+	                    "h2",
+	                    { id: this.props.identity, className: "ui header" },
+	                    this.props.title
+	                )
+	            )
+	        );
+	    }
+	});
+
+	var NavCircles = _react2.default.createClass({
+	    displayName: "NavCircles",
+
+	    render: function render() {
+	        return _react2.default.createElement(
+	            "div",
+	            { className: "ui  segment" },
+	            _react2.default.createElement(
+	                "div",
+	                { className: "ui stackable four column grid" },
+	                _react2.default.createElement(NavCircle, { identity: "aboutCircle", title: "About Me" }),
+	                _react2.default.createElement(NavCircle, { identity: "scCircle", title: "Soundcloud Project" }),
+	                _react2.default.createElement(NavCircle, { identity: "photoCircle", title: "Photo Gallery" }),
+	                _react2.default.createElement(NavCircle, { identity: "contactCircle", title: "Contact" })
 	            )
 	        );
 	    }
@@ -116,7 +155,8 @@
 	        return _react2.default.createElement(
 	            "div",
 	            { className: "ui segments" },
-	            _react2.default.createElement(Banner, null)
+	            _react2.default.createElement(Banner, null),
+	            _react2.default.createElement(NavCircles, null)
 	        );
 	    }
 	});
