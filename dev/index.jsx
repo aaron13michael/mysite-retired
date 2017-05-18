@@ -45,7 +45,7 @@ var NavCircle = React.createClass({
 var NavCircles = React.createClass({
     render: function(){
         return (
-            <div className = "ui  segment">
+            <div className = "ui segment">
                 <div className="ui stackable four column grid">
                     <NavCircle identity="aboutCircle" title="About Me" />
                     <NavCircle identity="scCircle" title="Soundcloud Project" />
@@ -57,12 +57,23 @@ var NavCircles = React.createClass({
     }
 });
 
+var Copyright = React.createClass({
+  render: function(){
+    return (
+      <div className = "ui center aligned segment">
+        <h3>&#169; Aaron Michael Stadler 2017 all rights reserved</h3>
+      </div>
+    );
+  }
+});
+
 var Segments = React.createClass({
     render: function(){
         return (
         <div className = "ui segments">
             <Banner/>
             <NavCircles />
+            <Copyright />
         </div>
         );
     }

@@ -135,7 +135,7 @@
 	    render: function render() {
 	        return _react2.default.createElement(
 	            "div",
-	            { className: "ui  segment" },
+	            { className: "ui segment" },
 	            _react2.default.createElement(
 	                "div",
 	                { className: "ui stackable four column grid" },
@@ -143,6 +143,22 @@
 	                _react2.default.createElement(NavCircle, { identity: "scCircle", title: "Soundcloud Project" }),
 	                _react2.default.createElement(NavCircle, { identity: "photoCircle", title: "Photo Gallery" }),
 	                _react2.default.createElement(NavCircle, { identity: "contactCircle", title: "Contact" })
+	            )
+	        );
+	    }
+	});
+
+	var Copyright = _react2.default.createClass({
+	    displayName: "Copyright",
+
+	    render: function render() {
+	        return _react2.default.createElement(
+	            "div",
+	            { className: "ui center aligned segment" },
+	            _react2.default.createElement(
+	                "h3",
+	                null,
+	                "\xA9 Aaron Michael Stadler 2017 all rights reserved"
 	            )
 	        );
 	    }
@@ -156,7 +172,8 @@
 	            "div",
 	            { className: "ui segments" },
 	            _react2.default.createElement(Banner, null),
-	            _react2.default.createElement(NavCircles, null)
+	            _react2.default.createElement(NavCircles, null),
+	            _react2.default.createElement(Copyright, null)
 	        );
 	    }
 	});
