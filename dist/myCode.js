@@ -98,7 +98,7 @@
 	    render: function render() {
 	        return _react2.default.createElement(
 	            "div",
-	            { className: "ui segment" },
+	            { className: "ui segment banner" },
 	            _react2.default.createElement("img", { className: "ui centered aligned medium circular image", src: "img/smiley.jpg", width: "500px", height: "auto" }),
 	            _react2.default.createElement(
 	                "h1",

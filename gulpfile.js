@@ -18,7 +18,7 @@ gulp.task('webpack', function(){
 });
 
 gulp.task('sass', function(){
-  return gulp.src('dev/sass/*.scss')
+  return gulp.src('dev/sass/app.scss')
   .pipe(print())
   .pipe(sass(sassOptions).on('error', sass.logError))
   .pipe(sourcemaps.write())
@@ -34,4 +34,4 @@ gulp.task('watchsass', function(){
   return gulp.watch('dev/sass/*.*', ['sass']);
 });
 
-gulp.task('default', ['watchjsx, watchsass']);
+gulp.task('default', ['watchjsx', 'watchsass']);

@@ -18,8 +18,8 @@ var NavBar = React.createClass({
 var Banner = React.createClass({
     render: function(){
         return (
-        <div className = "ui segment">
-            <img className="ui centered aligned medium circular image" src="img/smiley.jpg" width="500px" height="auto"></img>
+        <div className = "ui segment banner">
+            <img className="ui centered aligned medium circular image" src="img/smiley.jpg" width="500px" height="auto" />
             <h1 className="ui center aligned header">
                 WELCOME TO MY WORLD!
             </h1>
