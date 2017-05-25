@@ -4,7 +4,7 @@ var path = require("path");
 var DEV = path.resolve(__dirname, "dev");
 var OUTPUT = path.resolve(__dirname, "dist");
 
-var config = {
+var react = {
     entry: DEV + "/index.jsx",
     output: {
         path: OUTPUT,
@@ -18,4 +18,4 @@ var config = {
 }
 };
 
-module.exports = config;
+module.exports = react;
