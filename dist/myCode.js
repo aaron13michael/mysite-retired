@@ -76,7 +76,7 @@
 	            _react2.default.createElement(
 	                "a",
 	                { className: "item" },
-	                "Soundcloud"
+	                "About Site"
 	            ),
 	            _react2.default.createElement(
 	                "a",
@@ -86,7 +86,7 @@
 	            _react2.default.createElement(
 	                "a",
 	                { className: "item" },
-	                "Contact"
+	                "EDM Explorer"
 	            )
 	        );
 	    }
@@ -118,10 +118,10 @@
 	            { className: "column" },
 	            _react2.default.createElement(
 	                "div",
-	                { className: "ui circular segment" },
+	                { id: this.props.identity, className: "ui circular segment" },
 	                _react2.default.createElement(
 	                    "h2",
-	                    { id: this.props.identity, className: "ui header" },
+	                    { className: "ui header" },
 	                    this.props.title
 	                )
 	            )
@@ -140,9 +140,9 @@
 	                "div",
 	                { className: "ui stackable four column grid" },
 	                _react2.default.createElement(NavCircle, { identity: "aboutCircle", title: "About Me" }),
-	                _react2.default.createElement(NavCircle, { identity: "scCircle", title: "Soundcloud Project" }),
-	                _react2.default.createElement(NavCircle, { identity: "photoCircle", title: "Photo Gallery" }),
-	                _react2.default.createElement(NavCircle, { identity: "contactCircle", title: "Contact" })
+	                _react2.default.createElement(NavCircle, { identity: "siteCircle", title: "About This Site" }),
+	                _react2.default.createElement(NavCircle, { identity: "scCircle", title: "EDM Explorer Project" }),
+	                _react2.default.createElement(NavCircle, { identity: "photoCircle", title: "Photo Gallery" })
 	            )
 	        );
 	    }

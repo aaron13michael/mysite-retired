@@ -1,6 +1,76 @@
-.ui.banner{
-  background: rgba(54, 110, 204, 0.9);
-  h1{
+.ui{
+  &.banner{
+    background: rgba(54, 110, 204, 0.9);
+  }
+
+  &.stackable{
+    &.menu{
+      margin-bottom: 0;
+    }
+    &.four.column.grid{
+      background-color: rgba(106, 106, 106, 0.15);
+    }
+  }
+
+  h1.ui.header{
     font-size: 5.5em;
+  }
+
+  &.segments{
+    margin-top: 0;
+    .segment{
+      border: none;
+    }
+  }
+
+  &.circular.segment{
+    display: block;
+    margin:auto;
+    height: 100%;
+    width: 100%;
+    padding-top: 30%;
+    padding-bottom: 25%;
+    h2{
+      color: whitesmoke;
+      font-family: 'Montserrat', sans-serif;
+    }
+  }
+} //ui class
+
+#aboutCircle{
+  background-color: rgba(9, 1, 157, 0.83);
+}
+
+#siteCircle{
+  background-color: rgba(68, 3, 91, 0.86);
+}
+
+#scCircle{
+  background-color: rgba(167, 0, 0, 0.83);
+}
+
+#photoCircle{
+  background-color: rgba(0, 157, 111, 0.81);
+}
+
+@media(min-width: 1500px){
+  .ui.circular.segment{
+    width: 50%;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    h2{
+      font-size: 2.5rem;
+    }
+  }
+}
+
+@media(min-width: 980px){
+  .ui.circular.segment{
+    width: 80%;
+    padding-top: 25%;
+    padding-bottom: 25%;
+  }
+  h2{
+    font-size: 2rem;
   }
 }

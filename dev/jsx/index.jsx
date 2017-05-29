@@ -7,9 +7,9 @@ var NavBar = React.createClass({
             <div className="ui stackable menu">
                 <div className="header item">Aaron Stadler Software</div>
                 <a className="item">About Me</a>
-                <a className="item">Soundcloud</a>
+                <a className="item">About Site</a>
                 <a className="item">Gallery</a>
-                <a className="item">Contact</a>
+                <a className="item">EDM Explorer</a>
             </div>
         );
     }
@@ -32,8 +32,8 @@ var NavCircle = React.createClass({
     render: function(){
         return (
             <div className ="column">
-                <div className="ui circular segment">
-                    <h2 id={this.props.identity} className="ui header">
+                <div id={this.props.identity} className="ui circular segment">
+                    <h2 className="ui header">
                         {this.props.title}
                     </h2>
                 </div>
@@ -48,9 +48,9 @@ var NavCircles = React.createClass({
             <div className = "ui segment">
                 <div className="ui stackable four column grid">
                     <NavCircle identity="aboutCircle" title="About Me" />
-                    <NavCircle identity="scCircle" title="Soundcloud Project" />
+                    <NavCircle identity="siteCircle" title="About This Site" />
+                    <NavCircle identity="scCircle" title="EDM Explorer Project" />
                     <NavCircle identity="photoCircle" title="Photo Gallery" />
-                    <NavCircle identity="contactCircle" title="Contact" />
                 </div>
             </div>
         );
