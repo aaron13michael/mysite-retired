@@ -35,6 +35,15 @@
       font-family: 'Montserrat', sans-serif;
     }
   }
+
+  &.bio{
+    padding-left: 2rem;
+  }
+
+  &.footer{
+    background-color: rgba(0, 0, 0, 0.86);
+    color: whitesmoke;
+  }
 } //ui class
 
 #aboutCircle{

@@ -19,7 +19,7 @@ var Banner = React.createClass({
     render: function(){
         return (
         <div className = "ui segment banner">
-            <img className="ui centered aligned medium circular image" src="img/smiley.jpg" width="500px" height="auto" />
+            <img className="ui centered aligned huge circular image" src="img/lucas.png"/>
             <h1 className="ui center aligned header">
                 WELCOME TO MY WORLD!
             </h1>
@@ -57,10 +57,31 @@ var NavCircles = React.createClass({
     }
 });
 
+var AboutMe = React.createClass({
+  render: function(){
+    return (
+      <div className = "ui segment bio">
+        <div className="ui stackable two column grid">
+          <div className="ten wide column">
+            <p>
+            Rerum aut eos et sit molestias. Repudiandae minima neque aut sequi. Quidem quod et quis consequuntur veniam est velit. Ratione quia molestiae quia. Cum commodi ut quod dolorem.
+Ratione nihil nulla qui magni cumque perspiciatis porro aut. Et dolore accusantium fuga accusantium ab praesentium deserunt. Corporis praesentium delectus maxime quidem aut tempora quod. Qui fugit molestiae voluptatem sed perferendis. Aliquam minus id inventore culpa ut rem officiis qui. Tempora deleniti non commodi nulla ut aut.
+Quis magni magnam totam quis. Placeat sapiente saepe qui est dolore. Magni unde perspiciatis est voluptatum architecto et omnis omnis.
+            </p>
+          </div>
+          <div className="six wide column">
+            <img className="ui centered medium circular image" src="img/me.jpg" />
+          </div>
+        </div>
+      </div>
+    );
+  }
+});
+
 var Copyright = React.createClass({
   render: function(){
     return (
-      <div className = "ui center aligned segment">
+      <div className = "ui center aligned segment footer">
         <h3>&#169; Aaron Michael Stadler 2017 all rights reserved</h3>
       </div>
     );
@@ -73,6 +94,7 @@ var Segments = React.createClass({
         <div className = "ui segments">
             <Banner/>
             <NavCircles />
+            <AboutMe />
             <Copyright />
         </div>
         );

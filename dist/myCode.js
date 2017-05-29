@@ -99,7 +99,7 @@
 	        return _react2.default.createElement(
 	            "div",
 	            { className: "ui segment banner" },
-	            _react2.default.createElement("img", { className: "ui centered aligned medium circular image", src: "img/smiley.jpg", width: "500px", height: "auto" }),
+	            _react2.default.createElement("img", { className: "ui centered aligned huge circular image", src: "img/lucas.png" }),
 	            _react2.default.createElement(
 	                "h1",
 	                { className: "ui center aligned header" },
@@ -148,13 +148,42 @@
 	    }
 	});
 
+	var AboutMe = _react2.default.createClass({
+	    displayName: "AboutMe",
+
+	    render: function render() {
+	        return _react2.default.createElement(
+	            "div",
+	            { className: "ui segment bio" },
+	            _react2.default.createElement(
+	                "div",
+	                { className: "ui stackable two column grid" },
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "ten wide column" },
+	                    _react2.default.createElement(
+	                        "p",
+	                        null,
+	                        "Rerum aut eos et sit molestias. Repudiandae minima neque aut sequi. Quidem quod et quis consequuntur veniam est velit. Ratione quia molestiae quia. Cum commodi ut quod dolorem. Ratione nihil nulla qui magni cumque perspiciatis porro aut. Et dolore accusantium fuga accusantium ab praesentium deserunt. Corporis praesentium delectus maxime quidem aut tempora quod. Qui fugit molestiae voluptatem sed perferendis. Aliquam minus id inventore culpa ut rem officiis qui. Tempora deleniti non commodi nulla ut aut. Quis magni magnam totam quis. Placeat sapiente saepe qui est dolore. Magni unde perspiciatis est voluptatum architecto et omnis omnis."
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "six wide column" },
+	                    _react2.default.createElement("img", { className: "ui centered medium circular image", src: "img/me.jpg" })
+	                )
+	            )
+	        );
+	    }
+	});
+
 	var Copyright = _react2.default.createClass({
 	    displayName: "Copyright",
 
 	    render: function render() {
 	        return _react2.default.createElement(
 	            "div",
-	            { className: "ui center aligned segment" },
+	            { className: "ui center aligned segment footer" },
 	            _react2.default.createElement(
 	                "h3",
 	                null,
@@ -173,6 +202,7 @@
 	            { className: "ui segments" },
 	            _react2.default.createElement(Banner, null),
 	            _react2.default.createElement(NavCircles, null),
+	            _react2.default.createElement(AboutMe, null),
 	            _react2.default.createElement(Copyright, null)
 	        );
 	    }
